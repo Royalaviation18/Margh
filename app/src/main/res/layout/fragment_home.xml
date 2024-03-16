@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".fragments.HomeFragment">
 
     <TextView
@@ -20,7 +21,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/tvQuote"
-        android:layout_marginLeft="5dp"
+        android:layout_marginLeft="10dp"
         android:layout_marginTop="10dp"
         android:background="@color/button_bg"
         android:padding="10dp"
@@ -37,9 +38,7 @@
         android:layout_marginTop="15dp"
         android:layout_marginRight="10dp"
         android:background="@drawable/searchview_background"
-        android:drawableRight="@drawable/baseline_account_box_24"
-        android:iconifiedByDefault="false"
-        android:searchIcon="@drawable/baseline_home_24" />
+        android:searchIcon="@drawable/search" />
 
     <ImageView
         android:id="@+id/ivImage"
@@ -62,18 +61,47 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/fav"
             android:layout_marginLeft="40dp"
             android:layout_marginTop="20dp"
-            />
+            android:src="@drawable/fav" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Save"
-            android:textSize="18sp"
             android:layout_marginLeft="38dp"
-            android:layout_marginTop="57dp"/>
+            android:layout_marginTop="57dp"
+            android:text="Save"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="190dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/download" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="170dp"
+            android:layout_marginTop="57dp"
+            android:text="Download"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="330dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/share" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="320dp"
+            android:layout_marginTop="57dp"
+            android:text="Share"
+            android:textSize="18sp" />
 
     </androidx.cardview.widget.CardView>
 
